@@ -1,2 +1,2 @@
-# 3.8-project
-DIT 3.8 project for neural networks and stuff.
+# 3.4 project
+DIT 3.4 project for neural networks and stuff.
