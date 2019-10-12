@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Anaheim&display=swap" rel="stylesheet">
+    <title>Deep Learning</title>
+  </head>
+
+  <body>
+    <section class = "stage-one">
+      <nav>
+        <ul>
+          <li><h4>Sections</h4></li>
+          <li><h4>Neurons</h4></li>
+          <li><h4>Weights & Layers</h4></li>
+          <li><h4>Convolution</h4></li>
+        </ul>
+      </nav>
+
+      <div class="hero-image">
+        <h2>Neural Networks</h2>
+        <img src="Images/heroImg.png" alt="network">
+      </div>
+
+      <div class="start-box">
+        <h3>What is a neural network?</h3>
+        <p>To set some terms straight, a neural network is one popular method of getting machines to learn.
+          Some of the techniques used in making a neural network come under 'Deep Learning'.
+           Neural networks are revolutionizing the world as we speak.
+           This site is here to teach you how they work, from the ground up.</p>
+      </div>
+
+      <div class="intro">
+        <h1>Introduction</h1>
+        <p>The idea of a machine being able to do a human task is called 'Artificial Intelligence'.
+          The basis behind neural networks is 'Deep Learning' - that is one popular method of getting a computer to predict an appropriate human response to a task.
+          Artificial intelligence has a wide range of applications. But, of course in order to know how we can make a computer automate a task for us.
+          We need to understand how computers learn, or in a more deeper sense - what learning even is.
+          Understanding what learning fundamentally is, and how it happens is imperative to understanding how a neural network functions.
+          This first section will attempt to answer this.</p>
+        <div class="cake-images">
+          <img src="Images/egg.jpg" alt="eggs">
+          <img src="Images/cake.jpg" alt="cake">
+          <img src="Images/flour.jpg" alt="flour">
+        </div>
+
+        <h3>Let's say you're learning to bake cakes</h3>
+        <p>And someone gives you all the right ingredients for some type of cake.
+          Maybe they want a sponge cake, maybe they want an ice cream cake, or maybe they just want a cake that's a bit more moist.
+          Now, some people might make exact replicas by following recipes - not understanding the reasoning behind anything in the recipe.
+          But if you're a good cake maker, you wouldn't just know how to make a cake - you would know the individual steps that turn a cake into what it is.
+          You might know, that more flour makes it drier, mixing more creates an 'airy' cake, what makes a cake 'spongy',
+          or maybe even something as simple as 'food coloring colors the cake'.
+          Knowing how to make a cake, is different to knowing how to make 'cakes'.
+          Following recipes which are given to you to a tee, does not mean you 'know' anything about making a cake.
+          Knowing how each ingredient, and step work together to make something more 'spongy', 'dry', or 'fluffy' means you 'know' how to make a cake.
+          Essentially, all 'knowing' something really means is that you know how every 'some <b>action</b>' on 'some <u>thing</u>' (e.g <b>beating</b> an <u>egg</u>) leads to 'some <i>result</i>'
+          Knowing every single '<b>action</b> <u>thing</u> <i>result</i>' combination for a task, would mean you fully know how to do said task.
+          Learning, is just the process of finding these combinations. </p>
+
+        <div class="func-example">
+          <img src="Images/functionEg.jpg" alt="sigmoid">
+          <p>The image above is a 'function', and it is exactly what we have just described. The 'x' is the '<u>thing</u>',
+            the expression on the right is the '<b>action</b>', and whatever the sum of that expression is, is the '<i>result</i>'.
+            What a function says is that 'doing this to a given input 'x' will give some output'.
+            If we know the output, and we know the input, then all we have to do is learn what we have to do to those inputs to make it give us this output. </p>
+        </div>
+
+        <h3>When a computer learns it's just finding the right functions</h3>
+      </div>
+      <div class="next-btn">Next</div>
+
+    </section>
+
+    <section class="stage-two">
+      <h1>Neurons and Features</h1>
+      <p>But what are the right functions? Better question - what are the right results?
+        Using the cake analogy again, what is it that differentiates a cake from a brownie or a biscuit?
+        Or similarly, how can we tell that a sponge cake and a cheesecake are both cakes - yet they are completely different in texture, taste, and appearance?
+        Personally, I think that we take our ability to just look/hear/smell/feel/taste something and immediately classify it, all for granted.
+        Listening to music and feeling the emotion it evokes, telling apart faces, reading a poem and deciphering it's meaning,
+        or even something as simple as telling apart cats and dogs.
+        Every skill, talent, and ability no matter how simple, involves a complex process that we simply breeze through.
+        So, my hope is that by the end of this section, you will at the least agree with me on two concepts.
+        Two ideas that might give you a better appreciation for your own talents and abilities. Those two ideas are summed up in this one sentence:</p>
+      <h3>Your reality is made up of features and associations</h3>
+
+      <div class="imgArray">
+        <img src="Images/ringcake.jpg" alt="ring-cake">
+        <img src="Images/cheesecake.jpg" alt="cheesecake">
+        <p>What that sentence means is that we classify the things we encounter in real life, based on the different characteristics of those things.
+          The two cakes above look, taste, and feel different. Yet, just by looking at or tasting them - we would still call both a cake.</p>
+        <img src="Images/brownieOne.jpg" alt="brownie">
+        <img src="Images/brownieTwo.jpg" alt="brownie">
+        <p>These brownies are similar to a cake. Yet we wouldn't call it a cake.
+          We can deviate the recipe to make those brownies drier, moister, fluffier - maybe even add some frosting.
+          But we still might not necessarily call it a cake. Why?
+          Well, because the two cakes, look/taste 'cakey', and the two brownies still look/taste like a brownie.</p>
+
+        <img src="Images/cookie.jpg" alt="cookie">
+
+        <img src="Images/biscuit.jpg" alt="biscuit">
+      </div>
+
+      <p>Let's call all those characteristics of a cake, like moisture, fluffiness, and sweetness - features.
+        Now, these 2 images above, are NOT very similar to a cake.
+        Both of those things are also sweet, so it's clear to us that sweetness doesn't play a huge part in determining what and what isn't a cake.
+        But, maybe if we changed a feature like 'softness', and made a cake which was very hard - then we would stop calling it a cake
+        and call it closer to a biscuit instead. In this context which I have made up.
+        Brownies are not a cake, but they are closer to a cake than a biscuit is - in large part (yet not entirely) because of their softness.
+        The point here is that some features matter more than others.
+        All those features like sweetness, are still all very reminiscent of a cake, and contribute to our definition of a cake -
+        but not nearly as much as others.</p>
+
+      <img src="Images/excellentLion.png" alt="lion">
+      <p>Maybe, for something like a lion. A feature like the texture of it's fur, doesn't matter as much as the distinct ring of fur that it has around it's head.
+        And for that reason, we as humans can recognize cartoon, or lions drawn by a child,
+        as representing the same concept - because the features which are strongly associated with a lion are still there.</p>
+
+      <div class="feature-interaction">
+      </div>
+
+      <p>In the interactable above: more brightly lit = more associated
+        In a neural network, the network is repeatedly trained to detect these features. We won't look at how this training process really works,
+        so in it's simplest form, the network undergoes training by initially just making up random ''gibberish features for a given input (say an image of a cat),
+        and improves on making up these features overtime by being told how it's output deviates from the actual answer.
+        For now, we will just assume that our neural network has hit a point where it has made up just about the right features.
+        Neurons or activations (they're the same thing), are the backbone of the network.
+        They are numbers which are a rating of how 'present' a feature is in for a particular input.
+        Each neuron represents a feature, or even a feature of a feature. These neurons would (in this ideal network) be separated into layers, with the most complex features being last, and most simple first.
+        Say we've trained our network to classify animals.
+        And we input in a cat.</p>
+      <img src="Images/lowLevelFeatures.png" alt="cat-ear-features">
+      <p>It might have a neuron for the slit-like eyes, the pointy ears and the round face.
+        It recognizes all these high level features in one of the last layers, but in order to recognize those features it
+        first has to recognize the features of those features, and the features of those features etc.
+        When we recognize a cat by a feature like it's ears, we recognize that the edges in that particular formation are associated with being in a 'point-like' shape,
+        and the cat ears feature is associated to some high degree to that lower level shape feature.
+        In our ideal neural network, it associates lower and lower level features until we reach the individual pixels
+        which make up the image of the particular feature.</p>
+
+      <h3>Small features make up big features, which make up bigger ones</h3>
+    </section>
+    <section class="stage-three">
+      <h1>Weights & Neurons</h1>
+
+      <img src="Images/weights.jpg" alt="weights">
+      <p>The lines connecting each neuron are weights.
+        They are a number which represent how strongly associated/connected a feature is to a particular neuron.
+        Now, if a feature is really just a bunch of lower level features associated with it, then the 'presentness' of a feature in the image (how big of a number the neuron is in other words),
+        can be determined by how present those lower level features from the previous layers are.</p>
+
+      <img src="Images/activationMath.jpg" alt="activations">
+
+      <p>And because our neural network has the correct weights/associations for those features,
+        if the particular lower level features which really matter (are generally strongly associated with our output).
+        A high weight value multiplied by a high activation value gives us a higher number for the next feature - and the opposite will happen for the features which don't matter as much.
+        So by multiplying each activation by it's weight/it's association with a particular neuron (a specific feature),
+        we get a 'rating' for how much the network thinks this feature is present, just based on the associations and the input alone.
+        But that's not all. The network, at this point has taken an input, based on what it associates with that input.
+        However, when we see things in real life, we usually expect some things to be there more than others.
+        We wouldn't expect to see pork chops on the shelves of a tech store.
+        So even, though we see a pork chop, our brains deceive us to think it's something else based on the context we're in.
+        There is a positive/negative 'bias' towards some features and not others. You can think of the bias as a threshold that the input must meet in order for the network to start saying 'yup, it's probably that thing'.
+        Finally, we add a bias to our sum, and put it into a thing called an 'activation function', a function which really just makes the numbers normal and coherent.
+        This process occurs for every neuron of a layer. Where the associations and activations of the last layer,
+        combine to give you the values for the activations in the next. </p>
+
+      <h3>As small features decide big features, activations of previous layers decide the next</h3>
+    </section>
+
+    <section class="stage-four">
+      <h1>Convolution</h1>
+      <div class="convol-interaction">
+      </div>
+      <p>In previous sections, I discussed how the output is really a bunch of associated features,
+        which can be broken down into smaller and smaller features until we reach the smallest feature.
+        In this section, we're going to learn how to put that concept into practice by using 'filters' to get a representation of how well, an input fits a particular feature.
+        One question you might be asking after the last section is, 'how do we get these weights from an input? How do we associate the lowest level of features with a bigger feature in practice?
+        Take the interactive above. Our aim is to have the neural network recognize handwritten characters from an image. Here, our lowest level feature is a pixel, as it's the pixels which make up the lines, which make up the shapes, which make up the bigger features we see on screen - so that's where we start.
+        Shown in the interactive above, each pixel becomes a feature, and the bigger feature we are trying to look for is a line. The 'filter' shown on the right is that bigger feature, and the 'feature map' is the result of the filter being applied to the input image.
+        The computer creates these feature maps by taking the feature and 'sliding it across the entire image, a couple (or several) pixels at a time and comparing it to the input. it assigns a value for each pixel in the input by multiplying the image pixel brightness values with the filter's. A feature map is created from doing this to the entire image.
+        In the interactive above, because we're trying to look for a line in the image, the network ends up heavily associating the pixels/features which are in the place where the line is with our bigger line feature. And similarly, won't associate with the pixels for where the line isn't.
+        As a result, each pixel on the feature map becomes a weight, with it's brightness corresponding to it's weight. And each pixel on the actual input image becomes an activation.
+        <b>There is much more to neural networks but this is the main gist of it.</b>
+        <i>If you'd like to learn more about deep learning and neural networks check out 3Blue1Brown's videos on neural networks, or Michael Nielsen's deep learning guides.</i>
+        But at the very least I hope you've learnt something useful from this guide!</p>
+
+        <footer>
+          <div class="logo">
+            <h4>Deep Learning</h4>
+            <h5>for beginners</h5>
+          </div>
+
+            <h5>&copy; Samuel Chan 2019</h5>
+        </footer>
+    </section>
+
+  </body>
+</html>
