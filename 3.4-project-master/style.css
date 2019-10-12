@@ -29,3 +29,20 @@ h4 {
 h5 {
   font-family: 'Anaheim', sans-serif;
 }
+
+nav ul {
+  list-style: none;
+  background-color: #232323;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+}
+
+nav ul li {
+  display: inline-block;
+  width: 10%;
+}
+
+nav ul li h4 {
+  font-weight: bold !important;
+}
