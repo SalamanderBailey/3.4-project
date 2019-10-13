@@ -7,6 +7,9 @@
     font-style: normal;
 
 }
+a {
+  text-decoration: none;
+}
 
 * {
   font-family: 'helveticaregular', sans-serif;
@@ -33,15 +36,20 @@ h5 {
 nav ul {
   list-style: none;
   background-color: #232323;
-  color: white;
   text-align: center;
   border-radius: 5px;
+  padding: 25px 25px;
 }
 
 nav ul li {
   display: inline-block;
   width: 10%;
 }
+
+ nav ul li a {
+   color: white;
+   font-weight: bold;
+ }
 
 nav ul li h4 {
   font-weight: bold !important;
