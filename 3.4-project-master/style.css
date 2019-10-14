@@ -112,7 +112,7 @@ nav li:hover {
   font-family: 'Anaheim', sans-serif;
   position: absolute;
   top: 20%;
-  left: 41vw;
+  /*left: 41vw;*/
   right: 30vw;
 
 }
