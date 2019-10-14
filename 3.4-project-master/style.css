@@ -117,6 +117,21 @@ nav li:hover {
 
 }
 
+.btn-next{
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.btn-next button{
+  border: 0;
+  font-size: 2rem;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  width: 13rem;
+  height: 4rem;
+  font-weight: 600;
+}
+
 .start-box {
   padding: 30vh 20vw;
   border-bottom-style: solid;
