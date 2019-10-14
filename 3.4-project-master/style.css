@@ -277,3 +277,12 @@ footer h4 {
 .cut-off {
 
 }
+
+.logo-head, .footer-tagline{
+  display: block;
+  text-align: left;
+}
+
+.footer-tagline, .copyright{
+  font-style: italic;
+}
