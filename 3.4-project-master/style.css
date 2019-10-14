@@ -74,12 +74,12 @@ nav ul {
   padding: 4rem;
 }
 
-.stage-one {
-  border-bottom: solid;
-}
-
 .nav-title {
   grid-column: 1 / -1;
+}
+
+.stage-1 {
+  border-bottom: solid;
 }
 
 .hero-image {
@@ -140,12 +140,16 @@ nav ul {
   margin: 0px 10vw;
 }
 
-.stage-two p {
+.stage-2 p {
   padding: 6vh 30vw;
 }
 
-.stage-two {
+.stage-2 {
   border-bottom: solid;
+}
+
+.cutoff-1 {
+  
 }
 
 .imgArray p {
@@ -185,11 +189,11 @@ nav ul {
   width: 30rem;
 }
 
-.stage-three p {
+.stage-3 p {
   padding: 6vh 25vw;
 }
 
-.stage-three {
+.stage-3 {
   border-bottom: solid;
 }
 
@@ -213,7 +217,7 @@ nav ul {
   width: 45rem;
 }
 
-.stage-four p {
+.stage-4 p {
   padding: 6vh 20vw;
 }
 
@@ -238,4 +242,8 @@ footer h4 {
 
 .logo-head {
   grid-column: 1 / -1
+}
+
+.cut-off {
+
 }
