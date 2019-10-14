@@ -64,6 +64,7 @@ img {
 nav {
   background-color: var(--primary-color);
   text-align: center;
+  position: fixed;
 }
 
 nav ul {
@@ -72,6 +73,18 @@ nav ul {
   grid-template-rows: 1fr;
   list-style: none;
   padding: 4rem;
+}
+
+nav li {
+  cursor: pointer;
+}
+
+nav li:hover {
+  text-decoration: underline;
+}
+
+#cut-off-one {
+  opacity: 0.3;
 }
 
 .nav-title {
@@ -149,7 +162,7 @@ nav ul {
 }
 
 .cutoff-1 {
-  
+
 }
 
 .imgArray p {
