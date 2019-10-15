@@ -12,9 +12,9 @@
       <nav>
         <h4 id='nav-heading'>Sections</h4>
         <ul>
-          <a href="#cut-off-1"><li><h4 class='next-one'>Neurons</h4></li></a>
-          <a href="#cut-off-2"><li><h4 class='next-two'>Weights</h4></li></a>
-          <a href="#cut-off-3"><li><h4 class='next-three'>Convolution</h4></li></a>
+          <li><a href="#cut-off-1"><h4 class='next-one'>Neurons</h4></a></li>
+          <li><a href="#cut-off-2"><h4 class='next-two'>Weights</h4></a></li>
+          <li><a href="#cut-off-3"><h4 class='next-three'>Convolution</h4></a></li>
         </ul>
       </nav>
 
@@ -58,7 +58,7 @@
           <br>Learning, is just the process of finding these combinations. </p>
 
         <div class="func-example">
-          <img src="Images/functionEg.jpg" alt="sigmoid"><
+          <img src="Images/functionEg.jpg" alt="sigmoid">
           <div>
             <p>The image above is a 'function', and it is exactly what we have just described. <br>The 'x' is the '<u>thing</u>',
               the expression on the right is the '<b>action</b>', and whatever the sum of that expression is, is the '<i>result</i>'.<br><br>
@@ -79,7 +79,7 @@
     <h1>Neurons and Features</h1>
   </div>
 
-    <div id="content">
+      <div id="content">
       <section class="stage-2">
     <p id='jump-one'>But what are the right functions?<br><br> Better question - what are the right results?<br>
       Using the cake analogy again, what is it that differentiates a cake from a brownie or a biscuit?
@@ -202,19 +202,20 @@
     <div class="conv-diagram" id='jump-three'>
       <img src="Images/convolution.jpg" alt="filters">
     </div>
-    <p>In previous sections, I discussed how the output is really a bunch of associated features,
-      which can be broken down into smaller and smaller features until we reach the smallest feature.<br><br>
-      In this section, we're going to learn how to put that concept into practice by using 'filters' to get a representation of how well, an input fits a particular feature.<br><br>
-      One question you might be asking after the last section is, 'how do we get these weights from an input?' 'How do we associate the lowest level of features with a bigger feature in practice?'<br><br>
-      Well, take the diagram above. In that, our aim is to have the neural network recognize handwritten characters from an image. <br><br>Here, our lowest level feature is a pixel, as it's the pixels which make up the lines, which make up the shapes, which make up the bigger features we see on screen - so that's where we start.
-      <br><br>Shown in the diagram, each pixel is a feature, and the bigger feature that's made up of those features that we are trying to look for, is a line. <br><br>The 'filter' shown on the right is that bigger feature, and the 'feature map' is the result of the filter being applied to the input image.
-      <br><br>The computer creates these feature maps by taking the feature and 'sliding it across the entire image, a couple (or several) pixels at a time and comparing it to the input. <br>It assigns a value for each pixel in the input by multiplying the image pixel brightness values with the filter's. <br>A feature map is created from doing this to the entire image.
-      In the diagram above, because we're trying to look for a line in the image, the network ends up heavily associating the pixels/features which are in the place where the line is with our bigger line feature. And similarly, won't associate with the pixels for where the line isn't.
-      <br><br>As a result, each pixel on the feature map becomes a weight, with it's brightness corresponding to it's weight. And each pixel on the actual input image becomes an activation.<br><br><br>
-      <b>There is much more to neural networks but this is the main gist of it.</b><br><br>
-      <i>If you'd like to learn more about deep learning and neural networks check out 3Blue1Brown's videos on neural networks, or Michael Nielsen's deep learning guides.</i><br><br>
-      But at the very least I hope you've learnt something useful from this guide!</p>
-    </div>
+        <p>In previous sections, I discussed how the output is really a bunch of associated features,
+        which can be broken down into smaller and smaller features until we reach the smallest feature.<br><br>
+        In this section, we're going to learn how to put that concept into practice by using 'filters' to get a representation of how well, an input fits a particular feature.<br><br>
+        One question you might be asking after the last section is, 'how do we get these weights from an input?' 'How do we associate the lowest level of features with a bigger feature in practice?'<br><br>
+        Well, take the diagram above. In that, our aim is to have the neural network recognize handwritten characters from an image. <br><br>Here, our lowest level feature is a pixel, as it's the pixels which make up the lines, which make up the shapes, which make up the bigger features we see on screen - so that's where we start.
+        <br><br>Shown in the diagram, each pixel is a feature, and the bigger feature that's made up of those features that we are trying to look for, is a line. <br><br>The 'filter' shown on the right is that bigger feature, and the 'feature map' is the result of the filter being applied to the input image.
+        <br><br>The computer creates these feature maps by taking the feature and 'sliding it across the entire image, a couple (or several) pixels at a time and comparing it to the input. <br>It assigns a value for each pixel in the input by multiplying the image pixel brightness values with the filter's. <br>A feature map is created from doing this to the entire image.
+        In the diagram above, because we're trying to look for a line in the image, the network ends up heavily associating the pixels/features which are in the place where the line is with our bigger line feature. And similarly, won't associate with the pixels for where the line isn't.
+        <br><br>As a result, each pixel on the feature map becomes a weight, with it's brightness corresponding to it's weight. And each pixel on the actual input image becomes an activation.<br><br><br>
+        <b>There is much more to neural networks but this is the main gist of it.</b><br><br>
+        <i>If you'd like to learn more about deep learning and neural networks check out 3Blue1Brown's videos on neural networks, or Michael Nielsen's deep learning guides.</i><br><br>
+        But at the very least I hope you've learnt something useful from this guide!</p>
+        </section>
+      </div>
 
         <footer>
           <div class="nav-grid">
@@ -223,7 +224,7 @@
             <div class="copyright"><h5>&copy; Samuel Chan 2019</h5></div>
           </div>
         </footer>
-    </section>
+
     <script src="app.js">
 
     </script>
