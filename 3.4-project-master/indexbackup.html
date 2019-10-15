@@ -13,7 +13,7 @@
         <h4 id='nav-heading'>Sections</h4>
         <ul>
           <a href="#cut-off-1"><li><h4 class='next-one'>Neurons</h4></li></a>
-          <a href="#cut-off-2"><li><h4 class='next-two'>Weights & Layers</h4></li></a>
+          <a href="#cut-off-2"><li><h4 class='next-two'>Weights</h4></li></a>
           <a href="#cut-off-3"><li><h4 class='next-three'>Convolution</h4></li></a>
         </ul>
       </nav>
@@ -39,9 +39,9 @@
           Understanding what learning fundamentally is, and how it happens is imperative to understanding how a neural network functions.
           This first section will attempt to answer this.</p>
         <div class="cake-images">
-          <img src="Images/egg.jpg" alt="eggs">
+          <img id='egg-img' src="Images/egg.jpg" alt="eggs">
           <img src="Images/cake.jpg" alt="cake">
-          <img src="Images/flour.jpg" alt="flour">
+          <img id='flour-img' src="Images/flour.jpg" alt="flour">
         </div>
         <h3>Let's say you're learning to bake cakes</h3>
         <p>And someone gives you all the right ingredients for some type of cake.
@@ -134,7 +134,8 @@
       <br><br>And for that reason, we as humans can recognize cartoon, or even lions drawn by a child,
       as representing the same concept - because the features which are strongly associated with a lion are still there.</p>
 
-    <div class="feature-diagram">
+    <div class="act-diagram">
+      <img src="Images/activationExample1.jpg" alt="activations">
     </div>
 
     <p><i>In the diagram above: more brightly lit = more associated</i><br><br>
@@ -198,7 +199,8 @@
         <h1>Convolution</h1>
       </div>
     <section class="stage-4">
-    <div class="convol-diagram" id='jump-three'>
+    <div class="conv-diagram" id='jump-three'>
+      <img src="Images/convolution.jpg" alt="filters">
     </div>
     <p>In previous sections, I discussed how the output is really a bunch of associated features,
       which can be broken down into smaller and smaller features until we reach the smallest feature.<br><br>
