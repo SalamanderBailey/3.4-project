@@ -23,6 +23,7 @@ html {
   font-style: normal;
   font-size: 62.5%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 h3 {
@@ -43,7 +44,7 @@ h4 {
   font-family: 'Anaheim', sans-serif;
   color: white;
   font-size: 4rem;
-
+  font-weight: normal;
 }
 
 h5 {
@@ -61,10 +62,13 @@ img {
   border-radius: 4px;
 }
 
+a {
+  text-decoration: none;
+}
+
 nav {
   background-color: var(--primary-color);
   text-align: center;
-  position: fixed;
 }
 
 nav ul {
@@ -77,18 +81,17 @@ nav ul {
 
 nav li {
   cursor: pointer;
+  transition: all 0.5s ease;
 }
 
 nav li:hover {
   text-decoration: underline;
+  text-decoration-color: white;
+  background-color: #144054;
 }
 
-#cut-off-one {
-  opacity: 0.3;
-}
-
-.nav-title {
-  grid-column: 1 / -1;
+#nav-heading {
+  font-family: 'helveticaregular', sans-serif;
 }
 
 .stage-1 {
@@ -121,9 +124,47 @@ nav li:hover {
 }
 
 .next-btn {
-  text-align: center;
+  font-family: 'Anaheim', sans-serif;
+  font-weight: normal;
+  position: absolute;
+  font-size: 3rem;
+  color: white;
+  padding: 3rem;
+  box-shadow: -8px 10px 8px 3px #888888;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  transition: all 0.5s ease;
+
 }
 
+.next-btn:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  background-color: #144054;
+}
+
+
+#next-1 {
+  bottom: 0%;
+  right: 50%;
+  transform: translate(50%, 10vh);
+}
+
+#next-2 {
+  bottom: 0;
+  right: 50%;
+  transform: translate(50%, 10vh);
+}
+
+#next-3 {
+  bottom: 0%;
+  right: 50%;
+  transform: translate(50%, 10vh);
+}
+
+body section {
+  position: relative;
+}
 .intro p {
   padding: 0px 20vw;
 }
@@ -255,8 +296,4 @@ footer h4 {
 
 .logo-head {
   grid-column: 1 / -1
-}
-
-.cut-off {
-
 }
