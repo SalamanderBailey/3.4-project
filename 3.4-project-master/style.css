@@ -22,7 +22,6 @@ html {
   font-weight: normal;
   font-style: normal;
   font-size: 62.5%;
-  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
@@ -68,18 +67,20 @@ a {
 
 nav {
   background-color: var(--primary-color);
-  text-align: center;
 }
 
 nav ul {
+  margin: auto;
+  width: 50%;
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  grid-template-columns: auto 1fr auto;
   grid-template-rows: 1fr;
   list-style: none;
   padding: 4rem;
 }
 
 nav li {
+  padding: 0px 4rem;
   cursor: pointer;
   transition: all 0.5s ease;
 }
@@ -113,8 +114,8 @@ nav li:hover {
   font-family: 'Anaheim', sans-serif;
   position: absolute;
   top: 20%;
-  left: 41vw;
-  right: 30vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
 }
 
